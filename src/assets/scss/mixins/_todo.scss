@@ -1,0 +1,23 @@
+@mixin todo-item {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: $cold-grey;
+  display: grid;
+  grid-template-columns: 40px 1fr 105px;
+  grid-column-gap: 20px;
+  align-items: center;
+  box-sizing: border-box;
+
+  &__input {
+    width: 100%;
+    height: max-content;
+    border-radius: 8px;
+    background-color: $light-grey;
+    padding: 5px 10px;
+    color: black;
+  }
+
+  &__button {
+    cursor: pointer;
+  }
+}

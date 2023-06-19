@@ -1,0 +1,26 @@
+@import '_reset.css';
+@import "_typography.scss";
+@import "_variables.scss";
+@import "./mixins";
+
+/* prevents screen shifts when the scrollbar appears */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $main-background;
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  color: $white;
+}
+
+p {
+  word-break: break-word;
+  overflow-x: hidden;
+}
+
+.nuxt-link-exact-active, .nuxt-link-active {
+  text-decoration: none;
+}
